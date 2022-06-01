@@ -10,6 +10,7 @@ import sys
 
 NMEA_EOLN_DELIMITER = "\r\n"
 
+
 def parse_ais_file(file_name):
     """ Parse the log file looking for BSVDM or BSVDO and replacing it with AIVDM or AIVDO"""
 
