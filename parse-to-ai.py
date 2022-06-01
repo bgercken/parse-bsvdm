@@ -8,7 +8,7 @@
 import os
 import sys
 
-NMEA_EOLN_DELIMITER = "\r\n"
+NMEA_EOLN_DELIMITER = "\n"
 
 
 def parse_ais_file(file_name):
@@ -38,8 +38,9 @@ def parse_ais_file(file_name):
                             # Use format to force the value to 2 characters.
                             h = "{:02X}".format(checksum)
                             # Finalize the format of the sentence.
+                            print("before: ->{}<-".format(s))
                             s = "!{}*{}{}".format(s, h, NMEA_EOLN_DELIMITER)
-                            print("{}".format(s), end='')
+                            print("after: ->{}<-".format(s), end='')
 
                             try:
                                 file_out.write(s)
