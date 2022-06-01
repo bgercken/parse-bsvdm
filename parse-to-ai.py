@@ -36,7 +36,7 @@ def parse_ais_file(file_name):
                             for j in range(0, len(s)):
                                 checksum ^= ord(s[j])
                             # Use format to force the value to 2 characters.
-                            h = "{:02x}".format(checksum)
+                            h = "{:02X}".format(checksum)
                             # Finalize the format of the sentence.
                             s = "!{}*{}{}".format(s, h, NMEA_EOLN_DELIMITER)
                             print("{}".format(s), end='')
