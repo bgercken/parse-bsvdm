@@ -2,7 +2,7 @@
 # parse-bsvdm
 
 
-This script can be used to parse AIS base station files and make them look like they came from a boat.
+This script can be used to parse AIS base station sentences (!BS) and make them look like they came from a boat (!AI).
 
 The script will take a specified log file that contains valid BSVDM and BSVDO entries and writes a new file with the AIVDM and AIVDO equivalents. All we do is take the original line, strip off the time stamp, change the sentence prefix, calculate the new checksum and reassemble the sentence.
 
