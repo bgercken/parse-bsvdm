@@ -38,10 +38,8 @@ def parse_ais_file(file_name):
                             # Use format to force the value to 2 characters.
                             h = "{:02X}".format(checksum)
                             # Finalize the format of the sentence.
-                            print("before: ->{}<-".format(s))
                             s = "!{}*{}{}".format(s, h, NMEA_EOLN_DELIMITER)
-                            print("after: ->{}<-".format(s), end='')
-
+                            print("{}".format(s), end='')
                             try:
                                 file_out.write(s)
                             except IOError as error:
