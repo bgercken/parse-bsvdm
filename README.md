@@ -14,7 +14,7 @@ https://kystverket.no/en/navigation-and-monitoring/ais/access-to-ais-data/
 
 Notes:
 
-1. If anyone has a pointer to describe the prefix to the base station records could you end it my way? bgercken@gmail.com
+1. If anyone has a pointer to describe the prefix to the base station records could you send it my way? bgercken@gmail.com
 
 Looking to decode the first two fields in a record like:
 
