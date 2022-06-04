@@ -11,3 +11,15 @@ Currently the AIS source data that I am using is from the public feed provided b
 More information about the NCA data feed can be found here: 
 
 https://kystverket.no/en/navigation-and-monitoring/ais/access-to-ais-data/
+
+Notes:
+
+1. If anyone has a pointer to describe the prefix to the base station records could you end it my way? bgercken@gmail.com
+
+Looking to decode the first two fields in a record like:
+
+```
+\s:2573310,c:1654088303*0B\!BSVDM,1,1,,A,B3m8E=000h72d?`stqjcCwd5kP06,0*22
+```
+
+Thanks.
