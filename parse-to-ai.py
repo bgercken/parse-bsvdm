@@ -14,7 +14,7 @@ NMEA_EOLN_DELIMITER = "\n"
 def parse_ais_file(file_name):
     """ Parse the log file looking for BSVDM or BSVDO and replacing it with AIVDM or AIVDO"""
 
-    out_file_name = file_name + ".out"
+    out_file_name = file_name + ".ais"
 
     with open(out_file_name, 'w') as file_out:
         with open(file_name) as file_in:
